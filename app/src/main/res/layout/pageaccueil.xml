@@ -42,6 +42,7 @@
         android:layout_alignParentEnd="true"
         android:textStyle="normal|bold|italic"
         android:textColor="@android:color/white"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@color/colorPrimaryDark"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>
