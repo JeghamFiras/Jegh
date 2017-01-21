@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Se connecter via fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scfb"
+        android:layout_below="@+id/sc"
+        android:layout_marginTop="38dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:layout_alignLeft="@+id/scg"
+        android:layout_alignStart="@+id/scg"
+        android:layout_alignRight="@+id/scg"
+        android:layout_alignEnd="@+id/scg"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Se connecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/sc"
+        android:textStyle="normal|bold|italic"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Courrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CO"
+        android:textStyle="normal|bold|italic"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/scg"
+        android:layout_toLeftOf="@+id/sc"
+        android:layout_toStartOf="@+id/sc"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edit1"
+        android:layout_below="@+id/CO"
+        android:layout_alignRight="@+id/sc"
+        android:layout_alignEnd="@+id/sc"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="Mot de passe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mdp"
+        android:textStyle="normal|bold|italic"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/si"
+        android:layout_alignLeft="@+id/CO"
+        android:layout_alignStart="@+id/CO"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:text="Se connecter via Google+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/scg"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/scfb"
+        android:layout_toEndOf="@+id/CO"
+        android:layout_alignLeft="@+id/CO"
+        android:layout_alignStart="@+id/CO"
+        android:layout_alignRight="@+id/si"
+        android:layout_alignEnd="@+id/si"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Saisie invalide!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/si"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignBaseline="@+id/edit1"
+        android:layout_alignBottom="@+id/edit1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edit2"
+        android:layout_below="@+id/mdp"
+        android:layout_alignLeft="@+id/edit1"
+        android:layout_alignStart="@+id/edit1" />
+
+    <TextView
+        android:text="Saisie invalide!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/si2"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignBaseline="@+id/edit2"
+        android:layout_alignBottom="@+id/edit2"
+        android:layout_alignLeft="@+id/si"
+        android:layout_alignStart="@+id/si"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="S'inscrire?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ins"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold|italic"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/au"
+        android:layout_toEndOf="@+id/au"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="31dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="S'authentifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/au"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_alignBaseline="@+id/ins"
+        android:layout_alignBottom="@+id/ins"
+        android:layout_alignLeft="@+id/edit2"
+        android:layout_alignStart="@+id/edit2"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

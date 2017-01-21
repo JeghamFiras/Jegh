@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Filiére"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/ce"
+        android:layout_alignStart="@+id/ce" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="exp:Rossi"
+        android:ems="10"
+        android:layout_alignTop="@+id/e1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/e2"
+        android:layout_toEndOf="@+id/e1"
+        android:layout_toRightOf="@+id/e1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/e4"
+        android:layout_alignRight="@+id/e2"
+        android:layout_alignEnd="@+id/e2"
+        android:id="@+id/textView13"
+        android:background="@android:drawable/checkbox_on_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:background="@android:drawable/checkbox_on_background"
+        android:layout_alignBaseline="@+id/e3"
+        android:layout_alignBottom="@+id/e3"
+        android:layout_alignRight="@+id/e2"
+        android:layout_alignEnd="@+id/e2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:background="@android:drawable/checkbox_on_background"
+        android:layout_alignBaseline="@+id/e2"
+        android:layout_alignBottom="@+id/e2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:background="@android:drawable/checkbox_on_background"
+        android:layout_alignTop="@+id/fl"
+        android:layout_toRightOf="@+id/mdp"
+        android:layout_toEndOf="@+id/mdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:background="@android:drawable/checkbox_on_background"
+        android:layout_alignBottom="@+id/e1"
+        android:layout_toLeftOf="@+id/e2"
+        android:layout_toStartOf="@+id/e2" />
+
+    <TextView
+        android:text="Prénom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/nom"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/ce"
+        android:layout_alignStart="@+id/ce" />
+
+    <TextView
+        android:text="Nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nom2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_above="@+id/e1"
+        android:layout_toRightOf="@+id/e1"
+        android:layout_toEndOf="@+id/e1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="exp:Jack"
+        android:ems="10"
+        android:id="@+id/e1"
+        android:layout_below="@+id/nom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="exp:xxx@enis.tn"
+        android:ems="10"
+        android:id="@+id/e3"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/fl"
+        android:layout_alignLeft="@+id/fl"
+        android:layout_alignStart="@+id/fl"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+
+    <TextView
+        android:text="Courrier éléctronique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ce"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_above="@+id/e3"
+        android:layout_toLeftOf="@+id/textView15"
+        android:layout_toStartOf="@+id/textView15"
+        android:layout_marginBottom="21dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/mdp"
+        android:layout_toLeftOf="@+id/textView14"
+        android:layout_toStartOf="@+id/textView14"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/rg">
+
+        <RadioButton
+            android:text="IAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:text="TRANS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:text="RTC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <RadioButton
+            android:text="SE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r4"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/e4"
+        android:layout_marginBottom="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/mdp"
+        android:layout_alignStart="@+id/mdp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:text="Mot de passe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mdp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/e4"
+        android:layout_alignLeft="@+id/fl"
+        android:layout_alignStart="@+id/fl" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inscri"
+        android:background="@color/colorPrimaryDark"
+        android:text="S'inscrire"
+        android:textStyle="normal|bold|italic"
+        android:textSize="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
